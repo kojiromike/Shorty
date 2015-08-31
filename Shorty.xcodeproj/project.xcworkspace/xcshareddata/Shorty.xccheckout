@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>275D6ED9-8005-4522-A96E-52FE4609F7AA</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Shorty</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>D145B4F598700971740B4DDD42E04C7D06C3E253</key>
+		<string>github.com:kojiromike/Shorty</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Shorty.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>D145B4F598700971740B4DDD42E04C7D06C3E253</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>github.com:kojiromike/Shorty</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>D145B4F598700971740B4DDD42E04C7D06C3E253</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>D145B4F598700971740B4DDD42E04C7D06C3E253</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Shorty</string>
+		</dict>
+	</array>
+</dict>
+</plist>
