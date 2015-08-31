@@ -26,12 +26,19 @@
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                             <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="URL" returnKeyType="go"/>
+                                            <connections>
+                                                <action selector="loadLocation:" destination="BYZ-38-t0r" eventType="editingDidEndOnExit" id="V66-fe-Zfd"/>
+                                            </connections>
                                         </textField>
-                                        <barButtonItem key="rightBarButtonItem" systemItem="refresh" id="2Ry-91-sD4"/>
+                                        <barButtonItem key="rightBarButtonItem" systemItem="refresh" id="2Ry-91-sD4">
+                                            <connections>
+                                                <action selector="loadLocation:" destination="BYZ-38-t0r" id="oas-Cw-8BU"/>
+                                            </connections>
+                                        </barButtonItem>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
-                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7PN-EZ-bgG">
+                            <webView contentMode="scaleToFill" scalesPageToFit="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7PN-EZ-bgG">
                                 <rect key="frame" x="0.0" y="64" width="600" height="536"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </webView>
@@ -47,6 +54,10 @@
                             <constraint firstItem="7PN-EZ-bgG" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="vhE-Cm-Pa4"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="urlField" destination="0fR-Ey-OgD" id="8dh-rT-EUa"/>
+                        <outlet property="webView" destination="7PN-EZ-bgG" id="qDh-hj-OnJ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
