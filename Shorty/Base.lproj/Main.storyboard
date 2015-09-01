@@ -39,22 +39,45 @@
                                 </items>
                             </navigationBar>
                             <webView contentMode="scaleToFill" scalesPageToFit="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7PN-EZ-bgG">
-                                <rect key="frame" x="0.0" y="64" width="600" height="536"/>
+                                <rect key="frame" x="0.0" y="64" width="600" height="492"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="CjC-aY-vSf"/>
+                                </connections>
                             </webView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ffc-YZ-rPZ">
+                                <rect key="frame" x="0.0" y="556" width="600" height="44"/>
+                                <items>
+                                    <barButtonItem enabled="NO" systemItem="play" id="Cbi-cg-h8u">
+                                        <connections>
+                                            <action selector="shortenURL:" destination="BYZ-38-t0r" id="oNo-hW-TJW"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem title="Tap arrow to shorten" id="jiX-yY-TQk">
+                                        <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    </barButtonItem>
+                                    <barButtonItem enabled="NO" title="Copy" id="Ajo-IH-aN0"/>
+                                </items>
+                            </toolbar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="77b-Su-urL" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="0qb-FF-art"/>
+                            <constraint firstItem="7PN-EZ-bgG" firstAttribute="leading" secondItem="ffc-YZ-rPZ" secondAttribute="leading" id="2SG-UJ-KWz"/>
                             <constraint firstItem="7PN-EZ-bgG" firstAttribute="leading" secondItem="77b-Su-urL" secondAttribute="leading" id="Ieu-2F-yp7"/>
                             <constraint firstAttribute="trailing" secondItem="77b-Su-urL" secondAttribute="trailing" id="IzE-SI-zVH"/>
+                            <constraint firstItem="ffc-YZ-rPZ" firstAttribute="trailing" secondItem="7PN-EZ-bgG" secondAttribute="trailing" id="XKM-ff-kWO"/>
                             <constraint firstItem="7PN-EZ-bgG" firstAttribute="top" secondItem="77b-Su-urL" secondAttribute="bottom" id="fh8-ya-OUL"/>
+                            <constraint firstItem="ffc-YZ-rPZ" firstAttribute="top" secondItem="7PN-EZ-bgG" secondAttribute="bottom" id="kdz-zG-2L8"/>
                             <constraint firstItem="77b-Su-urL" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="ozY-YT-63S"/>
                             <constraint firstItem="7PN-EZ-bgG" firstAttribute="trailing" secondItem="77b-Su-urL" secondAttribute="trailing" id="uRV-g7-hms"/>
-                            <constraint firstItem="7PN-EZ-bgG" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="vhE-Cm-Pa4"/>
+                            <constraint firstItem="ffc-YZ-rPZ" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="x8o-hm-nbx"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="clipboardButton" destination="Ajo-IH-aN0" id="LcC-tp-TJK"/>
+                        <outlet property="shortLabel" destination="jiX-yY-TQk" id="XHt-Lx-Cqz"/>
+                        <outlet property="shortenButton" destination="Cbi-cg-h8u" id="nhQ-Bk-7Gf"/>
                         <outlet property="urlField" destination="0fR-Ey-OgD" id="8dh-rT-EUa"/>
                         <outlet property="webView" destination="7PN-EZ-bgG" id="qDh-hj-OnJ"/>
                     </connections>
